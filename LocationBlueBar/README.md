@@ -2,6 +2,8 @@
 
 <http://www.openradar.me/20764660>
 
+<https://stackoverflow.com/questions/27132698/ios8-blue-bar-is-using-your-location-appears-shortly-after-exiting-app>
+
 Summary:
 
 When the background mode for locations is enabled, and the
