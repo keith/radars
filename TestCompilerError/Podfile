@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target :TestCompilerErrorTests do
+  pod 'Quick'               , :git => "https://github.com/Quick/Quick.git", :branch => "swift-2.0"
+  pod 'Nimble'              , :git => "https://github.com/Quick/Nimble.git", :branch => "swift-2.0"
+end
