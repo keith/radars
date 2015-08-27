@@ -35,3 +35,7 @@ Notes:
 - We got multiple warnings that implied there may be a character in a
   source file that the compiler was choking on. We filtered out all
   special characters (such as «) and had the same errors.
+
+- We are able to fix this by assigning the output of our function to a
+  temporary variable, or using `as String` inline. See
+  [here](https://github.com/Quick/Quick/issues/369)
