@@ -1,0 +1,179 @@
+Application Specific Information:
+CoreSimulator 179 - Device: IBSimDeviceTypeiPad1x - Runtime: iOS 9.0 (13A4325c) - DeviceType: IBSimDeviceTypeiPad1x
+
+
+Thread 7 Crashed:: TDRenditionsDistiller._distill:
+0   com.apple.CoreFoundation      	0x0000000100b9ff61 __CFBasicHashDrain + 353
+1   com.apple.CoreFoundation      	0x0000000100b90a1c CFRelease + 300
+2   com.apple.CoreFoundation      	0x0000000100b9ff42 __CFBasicHashDrain + 322
+3   com.apple.CoreFoundation      	0x0000000100b90a1c CFRelease + 300
+4   com.apple.ImageIO.framework   	0x0000000102794028 modifyJPEG + 2859
+5   com.apple.ImageIO.framework   	0x00000001025a39b8 CGImageDestinationCopyImageSource + 576
+6   com.apple.CoreThemeDefinition 	0x0000000102b98ec9 -[TDSimpleArtworkRenditionSpec createCSIRepresentationWithCompression:colorSpaceID:document:] + 1690
+7   com.apple.CoreThemeDefinition 	0x0000000102ba155b -[TDRenditionsDistiller _distill:] + 609
+8   com.apple.Foundation          	0x00000001002633ab __NSThread__start__ + 1198
+9   libsystem_pthread.dylib       	0x00000001021d2268 _pthread_body + 131
+10  libsystem_pthread.dylib       	0x00000001021d21e5 _pthread_start + 176
+11  libsystem_pthread.dylib       	0x00000001021d041d thread_start + 13
+
+
+Last command:
+_ON_QUEUE_sendMessage:toChannelReturningError:during:
+
+Backtrace of last command:
+  0  0x000000010ab56503 -[IBAbstractPlatformToolProxy _ON_QUEUE_sendMessage:toChannelReturningError:during:] (in IDEInterfaceBuilderKit)
+  1  0x000000010ab563c8 __74-[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:]_block_invoke (in IDEInterfaceBuilderKit)
+  2  0x00007fff81c59c13 _dispatch_client_callout (in libdispatch.dylib)
+  3  0x00007fff81c5ae5e _dispatch_barrier_sync_f_invoke (in libdispatch.dylib)
+  4  0x00000001099fb7c4 DVTDispatchSync (in DVTFoundation)
+  5  0x000000010ab562eb -[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:] (in IDEInterfaceBuilderKit)
+  6  0x00000001138630a6 (in IDEInterfaceBuilderCocoaTouchIntegration)
+  7  0x000000011384e5ff (in IDEInterfaceBuilderCocoaTouchIntegration)
+  8  0x000000010aaad2b5 __84-[IBICAbstractPlatformAdapter compileSelectedItems:options:queue:completionHandler:]_block_invoke (in IDEInterfaceBuilderKit)
+  9  0x00000001099fb8b8 __DVTDispatchAsync_block_invoke (in DVTFoundation)
+ 10  0x00007fff81c5e323 _dispatch_call_block_and_release (in libdispatch.dylib)
+ 11  0x00007fff81c59c13 _dispatch_client_callout (in libdispatch.dylib)
+ 12  0x00007fff81c65cbf _dispatch_main_queue_callback_4CF (in libdispatch.dylib)
+ 13  0x00007fff8ce133f9 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ (in CoreFoundation)
+ 14  0x00007fff8cdce68f __CFRunLoopRun (in CoreFoundation)
+ 15  0x00007fff8cdcdbd8 CFRunLoopRunSpecific (in CoreFoundation)
+ 16  0x000000010ab20a77 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:whileBlockExecutesConcurrently:] (in IDEInterfaceBuilderKit)
+ 17  0x000000010ab20c75 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:waitingForSemaphore:] (in IDEInterfaceBuilderKit)
+ 18  0x0000000109765786 (in ibtoold)
+ 19  0x0000000109766e30 (in ibtoold)
+ 20  0x00000001097672b0 (in ibtoold)
+ 21  0x0000000109774e6f (in ibtoold)
+ 22  0x0000000109775523 (in ibtoold)
+ 23  0x00000001097753fa (in ibtoold)
+ 24  0x00000001097645ce (in ibtoold)
+ 25  0x0000000109774a64 (in ibtoold)
+ 26  0x0000000109773cc9 (in ibtoold)
+ 27  0x00007fff815505c9 start (in libdyld.dylib)
+2015-08-27 14:48:24.280 ibtoold[67727:1304625] (
+	0   CoreFoundation                      0x00007fff8cec003c __exceptionPreprocess + 172
+	1   libobjc.A.dylib                     0x00007fff89dc776e objc_exception_throw + 43
+	2   CoreFoundation                      0x00007fff8cebfbd9 -[NSException raise] + 9
+	3   IDEInterfaceBuilderKit              0x000000010ab55592 -[IBAbstractPlatformToolProxy _errorByAddingAdditionalCrashInformationToError:orRaiseIfNeededOnFailure:shouldRaiseOnFailures:waitForCrashLog:] + 1632
+	4   IDEInterfaceBuilderKit              0x000000010ab54f08 -[IBAbstractPlatformToolProxy errorByAddingAdditionalCrashInformationToError:orRaiseIfNeededOnFailure:] + 98
+	5   IDEInterfaceBuilderKit              0x000000010ab5659d -[IBAbstractPlatformToolProxy _ON_QUEUE_sendMessage:toChannelReturningError:during:] + 227
+	6   IDEInterfaceBuilderKit              0x000000010ab563c8 __74-[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:]_block_invoke + 38
+	7   libdispatch.dylib                   0x00007fff81c59c13 _dispatch_client_callout + 8
+	8   libdispatch.dylib                   0x00007fff81c5ae5e _dispatch_barrier_sync_f_invoke + 57
+	9   DVTFoundation                       0x00000001099fb7c4 DVTDispatchSync + 62
+	10  IDEInterfaceBuilderKit              0x000000010ab562eb -[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:] + 393
+	11  IDEInterfaceBuilderCocoaTouchIntegration 0x00000001138630a6 IBUISegmentConfiguration + 6975
+	12  IDEInterfaceBuilderCocoaTouchIntegration 0x000000011384e5ff IBUIControlEventTypeToUIControlEventMask + 17323
+	13  IDEInterfaceBuilderKit              0x000000010aaad2b5 __84-[IBICAbstractPlatformAdapter compileSelectedItems:options:queue:completionHandler:]_block_invoke + 230
+	14  DVTFoundation                       0x00000001099fb8b8 __DVTDispatchAsync_block_invoke + 69
+	15  libdispatch.dylib                   0x00007fff81c5e323 _dispatch_call_block_and_release + 12
+	16  libdispatch.dylib                   0x00007fff81c59c13 _dispatch_client_callout + 8
+	17  libdispatch.dylib                   0x00007fff81c65cbf _dispatch_main_queue_callback_4CF + 861
+	18  CoreFoundation                      0x00007fff8ce133f9 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9
+	19  CoreFoundation                      0x00007fff8cdce68f __CFRunLoopRun + 2159
+	20  CoreFoundation                      0x00007fff8cdcdbd8 CFRunLoopRunSpecific + 296
+	21  IDEInterfaceBuilderKit              0x000000010ab20a77 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:whileBlockExecutesConcurrently:] + 500
+	22  IDEInterfaceBuilderKit              0x000000010ab20c75 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:waitingForSemaphore:] + 131
+	23  ibtoold                             0x0000000109765786 ibtoold + 14214
+	24  ibtoold                             0x0000000109766e30 ibtoold + 20016
+	25  ibtoold                             0x00000001097672b0 ibtoold + 21168
+	26  ibtoold                             0x0000000109774e6f ibtoold + 77423
+	27  ibtoold                             0x0000000109775523 ibtoold + 79139
+	28  ibtoold                             0x00000001097753fa ibtoold + 78842
+	29  ibtoold                             0x00000001097645ce ibtoold + 9678
+	30  ibtoold                             0x0000000109774a64 ibtoold + 76388
+	31  ibtoold                             0x0000000109773cc9 ibtoold + 72905
+	32  libdyld.dylib                       0x00007fff815505c9 start + 1
+	33  ???                                 0x0000000000000002 0x0 + 2
+)
+2015-08-27 14:48:24.281 ibtoold[67727:1304625] *** Terminating app due to uncaught exception 'IBPlatformToolFailureException', reason: 'The agent crashed
+
+Application Specific Information:
+CoreSimulator 179 - Device: IBSimDeviceTypeiPad1x - Runtime: iOS 9.0 (13A4325c) - DeviceType: IBSimDeviceTypeiPad1x
+
+
+Thread 7 Crashed:: TDRenditionsDistiller._distill:
+0   com.apple.CoreFoundation      	0x0000000100b9ff61 __CFBasicHashDrain + 353
+1   com.apple.CoreFoundation      	0x0000000100b90a1c CFRelease + 300
+2   com.apple.CoreFoundation      	0x0000000100b9ff42 __CFBasicHashDrain + 322
+3   com.apple.CoreFoundation      	0x0000000100b90a1c CFRelease + 300
+4   com.apple.ImageIO.framework   	0x0000000102794028 modifyJPEG + 2859
+5   com.apple.ImageIO.framework   	0x00000001025a39b8 CGImageDestinationCopyImageSource + 576
+6   com.apple.CoreThemeDefinition 	0x0000000102b98ec9 -[TDSimpleArtworkRenditionSpec createCSIRepresentationWithCompression:colorSpaceID:document:] + 1690
+7   com.apple.CoreThemeDefinition 	0x0000000102ba155b -[TDRenditionsDistiller _distill:] + 609
+8   com.apple.Foundation          	0x00000001002633ab __NSThread__start__ + 1198
+9   libsystem_pthread.dylib       	0x00000001021d2268 _pthread_body + 131
+10  libsystem_pthread.dylib       	0x00000001021d21e5 _pthread_start + 176
+11  libsystem_pthread.dylib       	0x00000001021d041d thread_start + 13
+
+
+Last command:
+_ON_QUEUE_sendMessage:toChannelReturningError:during:
+
+Backtrace of last command:
+  0  0x000000010ab56503 -[IBAbstractPlatformToolProxy _ON_QUEUE_sendMessage:toChannelReturningError:during:] (in IDEInterfaceBuilderKit)
+  1  0x000000010ab563c8 __74-[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:]_block_invoke (in IDEInterfaceBuilderKit)
+  2  0x00007fff81c59c13 _dispatch_client_callout (in libdispatch.dylib)
+  3  0x00007fff81c5ae5e _dispatch_barrier_sync_f_invoke (in libdispatch.dylib)
+  4  0x00000001099fb7c4 DVTDispatchSync (in DVTFoundation)
+  5  0x000000010ab562eb -[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:] (in IDEInterfaceBuilderKit)
+  6  0x00000001138630a6 (in IDEInterfaceBuilderCocoaTouchIntegration)
+  7  0x000000011384e5ff (in IDEInterfaceBuilderCocoaTouchIntegration)
+  8  0x000000010aaad2b5 __84-[IBICAbstractPlatformAdapter compileSelectedItems:options:queue:completionHandler:]_block_invoke (in IDEInterfaceBuilderKit)
+  9  0x00000001099fb8b8 __DVTDispatchAsync_block_invoke (in DVTFoundation)
+ 10  0x00007fff81c5e323 _dispatch_call_block_and_release (in libdispatch.dylib)
+ 11  0x00007fff81c59c13 _dispatch_client_callout (in libdispatch.dylib)
+ 12  0x00007fff81c65cbf _dispatch_main_queue_callback_4CF (in libdispatch.dylib)
+ 13  0x00007fff8ce133f9 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ (in CoreFoundation)
+ 14  0x00007fff8cdce68f __CFRunLoopRun (in CoreFoundation)
+ 15  0x00007fff8cdcdbd8 CFRunLoopRunSpecific (in CoreFoundation)
+ 16  0x000000010ab20a77 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:whileBlockExecutesConcurrently:] (in IDEInterfaceBuilderKit)
+ 17  0x000000010ab20c75 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:waitingForSemaphore:] (in IDEInterfaceBuilderKit)
+ 18  0x0000000109765786 (in ibtoold)
+ 19  0x0000000109766e30 (in ibtoold)
+ 20  0x00000001097672b0 (in ibtoold)
+ 21  0x0000000109774e6f (in ibtoold)
+ 22  0x0000000109775523 (in ibtoold)
+ 23  0x00000001097753fa (in ibtoold)
+ 24  0x00000001097645ce (in ibtoold)
+ 25  0x0000000109774a64 (in ibtoold)
+ 26  0x0000000109773cc9 (in ibtoold)
+ 27  0x00007fff815505c9 start (in libdyld.dylib)
+'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x00007fff8cec003c __exceptionPreprocess + 172
+	1   libobjc.A.dylib                     0x00007fff89dc776e objc_exception_throw + 43
+	2   CoreFoundation                      0x00007fff8cebfbd9 -[NSException raise] + 9
+	3   IDEInterfaceBuilderKit              0x000000010ab55592 -[IBAbstractPlatformToolProxy _errorByAddingAdditionalCrashInformationToError:orRaiseIfNeededOnFailure:shouldRaiseOnFailures:waitForCrashLog:] + 1632
+	4   IDEInterfaceBuilderKit              0x000000010ab54f08 -[IBAbstractPlatformToolProxy errorByAddingAdditionalCrashInformationToError:orRaiseIfNeededOnFailure:] + 98
+	5   IDEInterfaceBuilderKit              0x000000010ab5659d -[IBAbstractPlatformToolProxy _ON_QUEUE_sendMessage:toChannelReturningError:during:] + 227
+	6   IDEInterfaceBuilderKit              0x000000010ab563c8 __74-[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:]_block_invoke + 38
+	7   libdispatch.dylib                   0x00007fff81c59c13 _dispatch_client_callout + 8
+	8   libdispatch.dylib                   0x00007fff81c5ae5e _dispatch_barrier_sync_f_invoke + 57
+	9   DVTFoundation                       0x00000001099fb7c4 DVTDispatchSync + 62
+	10  IDEInterfaceBuilderKit              0x000000010ab562eb -[IBAbstractPlatformToolProxy sendMessage:toChannelReturningError:during:] + 393
+	11  IDEInterfaceBuilderCocoaTouchIntegration 0x00000001138630a6 IBUISegmentConfiguration + 6975
+	12  IDEInterfaceBuilderCocoaTouchIntegration 0x000000011384e5ff IBUIControlEventTypeToUIControlEventMask + 17323
+	13  IDEInterfaceBuilderKit              0x000000010aaad2b5 __84-[IBICAbstractPlatformAdapter compileSelectedItems:options:queue:completionHandler:]_block_invoke + 230
+	14  DVTFoundation                       0x00000001099fb8b8 __DVTDispatchAsync_block_invoke + 69
+	15  libdispatch.dylib                   0x00007fff81c5e323 _dispatch_call_block_and_release + 12
+	16  libdispatch.dylib                   0x00007fff81c59c13 _dispatch_client_callout + 8
+	17  libdispatch.dylib                   0x00007fff81c65cbf _dispatch_main_queue_callback_4CF + 861
+	18  CoreFoundation                      0x00007fff8ce133f9 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9
+	19  CoreFoundation                      0x00007fff8cdce68f __CFRunLoopRun + 2159
+	20  CoreFoundation                      0x00007fff8cdcdbd8 CFRunLoopRunSpecific + 296
+	21  IDEInterfaceBuilderKit              0x000000010ab20a77 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:whileBlockExecutesConcurrently:] + 500
+	22  IDEInterfaceBuilderKit              0x000000010ab20c75 -[NSRunLoop(IBIDEFoundationRunLoopAdditions) ib_spinRunLoopInMode:waitingForSemaphore:] + 131
+	23  ibtoold                             0x0000000109765786 ibtoold + 14214
+	24  ibtoold                             0x0000000109766e30 ibtoold + 20016
+	25  ibtoold                             0x00000001097672b0 ibtoold + 21168
+	26  ibtoold                             0x0000000109774e6f ibtoold + 77423
+	27  ibtoold                             0x0000000109775523 ibtoold + 79139
+	28  ibtoold                             0x00000001097753fa ibtoold + 78842
+	29  ibtoold                             0x00000001097645ce ibtoold + 9678
+	30  ibtoold                             0x0000000109774a64 ibtoold + 76388
+	31  ibtoold                             0x0000000109773cc9 ibtoold + 72905
+	32  libdyld.dylib                       0x00007fff815505c9 start + 1
+	33  ???                                 0x0000000000000002 0x0 + 2
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
