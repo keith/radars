@@ -1,0 +1,12 @@
+GenericProtocolError.swift:6:8: error: type 'MapperFromJSON' does not conform to protocol 'Mapper'
+struct MapperFromJSON: Mapper {
+       ^
+GenericProtocolError.swift:3:10: note: multiple matching functions named 'from' with type '<T> (String) -> T' (aka '<τ_1_0> String -> τ_1_0')
+    func from<T: RawRepresentable>(field: String) -> T
+         ^
+GenericProtocolError.swift:7:10: note: candidate exactly matches
+    func from<T>(field: String) -> T {}
+         ^
+GenericProtocolError.swift:8:10: note: candidate exactly matches
+    func from<T: RawRepresentable>(field: String) -> T {}
+         ^
