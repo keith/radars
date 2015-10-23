@@ -1,0 +1,3 @@
+BoolWarning.swift:2:17: error: binary operator '&&' cannot be applied to two 'Bool' operands
+    return true && true
+           ~~~~ ^  ~~~~

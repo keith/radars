@@ -1,0 +1,3 @@
+BoolWarning.swift:2:12: error: unexpected non-void return value in void function
+    return true
+           ^~~~
