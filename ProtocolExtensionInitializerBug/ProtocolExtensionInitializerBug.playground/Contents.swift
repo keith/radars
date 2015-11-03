@@ -14,3 +14,7 @@ Baz(string: ":)")
 struct Bar {}
 extension Bar: Foo {}
 Bar(string: ":(")
+
+/// This also works
+let string: String? = ""
+string.map(Bar.init)
