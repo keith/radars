@@ -1,0 +1,2 @@
+CODE_SIGN_ENTITLEMENTS = foo.entitlements
+SOME_VAR = releaseconfig

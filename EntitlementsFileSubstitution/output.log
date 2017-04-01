@@ -1,0 +1,10 @@
+Build Preparation
+Build task concurrency set to 8 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD TARGET Example OF PROJECT Example WITH CONFIGURATION Release ===
+
+Check dependencies
+Provisioning profile "iOS Team Provisioning Profile: com.smileykeith.Example" doesn't support the group.smileykeith.debugconfig App Group.
+Provisioning profile "iOS Team Provisioning Profile: com.smileykeith.Example" doesn't match the entitlements file's value for the com.apple.security.application-groups entitlement.
+Code signing is required for product type 'Application' in SDK 'iOS 10.3'
+
