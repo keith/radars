@@ -1,0 +1,57 @@
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x000000010300d111 libobjc.A.dylib`objc_exception_throw
+    frame #1: 0x0000000105f5a625 CoreFoundation`+[NSException raise:format:] + 197
+    frame #2: 0x0000000102b1aff2 Foundation`-[NSObject(NSKeyValueCoding) valueForKey:] + 369
+    frame #3: 0x0000000108d0b74d QuartzCore`CAObject_valueForKey + 121
+    frame #4: 0x0000000103565d38 UIKit`-[_UIViewAdditiveAnimationAction runActionForKey:object:arguments:] + 1948
+    frame #5: 0x0000000108caf891 QuartzCore`-[CALayer setContents:] + 221
+    frame #6: 0x0000000103b64a69 UIKit`-[UIStatusBarItemView setLayerContentsImage:] + 1046
+    frame #7: 0x0000000103b64d3b UIKit`-[UIStatusBarItemView updateContentsAndWidth] + 140
+    frame #8: 0x0000000103b645e3 UIKit`-[UIStatusBarItemView setStatusBarData:actions:] + 99
+    frame #9: 0x0000000103b66bfe UIKit`-[UIStatusBarLayoutManager _updateItemView:withData:actions:animated:] + 147
+    frame #10: 0x0000000103b664de UIKit`-[UIStatusBarLayoutManager updateItemsWithData:actions:animated:] + 279
+    frame #11: 0x0000000103b4e80c UIKit`-[UIStatusBarForegroundView _setStatusBarData:actions:animated:] + 1155
+    frame #12: 0x000000011513a88a UIKit`-[UIStatusBarForegroundViewAccessibility _setStatusBarData:actions:animated:] + 392
+    frame #13: 0x0000000103b4f04d UIKit`-[UIStatusBarForegroundView setStatusBarData:actions:animated:] + 1295
+    frame #14: 0x0000000103b7be1b UIKit`-[UIStatusBar forceUpdateToData:animated:] + 145
+    frame #15: 0x0000000103b80be1 UIKit`-[UIStatusBar _evaluateServerRegistration] + 237
+    frame #16: 0x0000000103b7f60f UIKit`-[UIStatusBar setHidden:animationParameters:] + 181
+    frame #17: 0x00000001034e2581 UIKit`-[UIApplication _setStatusBarHidden:animationParameters:changeApplicationFlag:] + 232
+    frame #18: 0x00000001034e1abd UIKit`-[UIApplication _updateCurrentStatusBarViewControllerAppearance] + 432
+    frame #19: 0x00000001036a4249 UIKit`-[UIViewController setNeedsStatusBarAppearanceUpdate] + 100
+  * frame #20: 0x0000000102a38094 StatusBarAnimationCrash`closure #1 in closure #1 in ViewController.animateStatusBar(self=0x00007ff4d67168f0) at ViewController.swift:21
+    frame #21: 0x0000000102a38b32 StatusBarAnimationCrash`partial apply for closure #1 in closure #1 in ViewController.animateStatusBar() at ViewController.swift:0
+    frame #22: 0x0000000102a380d9 StatusBarAnimationCrash`thunk for @callee_owned () -> () at ViewController.swift:0
+    frame #23: 0x00000001035983da UIKit`+[UIView(UIViewAnimationWithBlocks) _setupAnimationWithDuration:delay:view:options:factory:animations:start:animationStateGenerator:completion:] + 572
+    frame #24: 0x0000000103598993 UIKit`+[UIView(UIViewAnimationWithBlocks) animateWithDuration:animations:] + 48
+    frame #25: 0x0000000102a37fa8 StatusBarAnimationCrash`closure #1 in ViewController.animateStatusBar(self=0x00007ff4d67168f0) at ViewController.swift:22
+    frame #26: 0x0000000102a38992 StatusBarAnimationCrash`partial apply for closure #1 in ViewController.animateStatusBar() at ViewController.swift:0
+    frame #27: 0x0000000102a380d9 StatusBarAnimationCrash`thunk for @callee_owned () -> () at ViewController.swift:0
+    frame #28: 0x00000001040353a6 UIKit`-[UIViewPropertyAnimator _runAnimations] + 222
+    frame #29: 0x000000010403c1f1 UIKit`__41-[UIViewPropertyAnimator startAnimation:]_block_invoke + 300
+    frame #30: 0x000000010403b75f UIKit`-[UIViewPropertyAnimator _setupAnimationTracking:] + 131
+    frame #31: 0x000000010403bf13 UIKit`-[UIViewPropertyAnimator startAnimation:] + 1524
+    frame #32: 0x0000000102a37d11 StatusBarAnimationCrash`ViewController.animateStatusBar(self=0x00007ff4d67168f0) at ViewController.swift:25
+    frame #33: 0x0000000102a3810e StatusBarAnimationCrash`closure #2 in ViewController.animateStatusBar(_0=end, self=0x00007ff4d67168f0) at ViewController.swift:27
+    frame #34: 0x0000000102a38a1a StatusBarAnimationCrash`partial apply for closure #2 in ViewController.animateStatusBar() at ViewController.swift:0
+    frame #35: 0x0000000102a38151 StatusBarAnimationCrash`thunk for @callee_owned (@unowned UIViewAnimatingPosition) -> () at ViewController.swift:0
+    frame #36: 0x0000000104035b04 UIKit`-[UIViewPropertyAnimator _executeCompletionHandlerWithFinalPosition:] + 424
+    frame #37: 0x0000000104035c45 UIKit`-[UIViewPropertyAnimator _runCompletions:] + 59
+    frame #38: 0x0000000104034c7f UIKit`__61-[UIViewPropertyAnimator _setupAssociatedViewAnimationState:]_block_invoke + 97
+    frame #39: 0x0000000103598024 UIKit`-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:] + 527
+    frame #40: 0x000000010356b257 UIKit`-[UIViewAnimationState sendDelegateAnimationDidStop:finished:] + 222
+    frame #41: 0x000000010356b796 UIKit`-[UIViewAnimationState animationDidStop:finished:] + 136
+    frame #42: 0x0000000115142e7d UIKit`-[UIViewAnimationStateAccessibility animationDidStop:finished:] + 120
+    frame #43: 0x000000010356b7d9 UIKit`-[UIViewAnimationState animationDidStop:finished:] + 203
+    frame #44: 0x0000000115142e7d UIKit`-[UIViewAnimationStateAccessibility animationDidStop:finished:] + 120
+    frame #45: 0x0000000108cb268e QuartzCore`CA::Layer::run_animation_callbacks(void*) + 306
+    frame #46: 0x0000000106e4305c libdispatch.dylib`_dispatch_client_callout + 8
+    frame #47: 0x0000000106e2440b libdispatch.dylib`_dispatch_main_queue_callback_4CF + 411
+    frame #48: 0x0000000105eb6909 CoreFoundation`__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9
+    frame #49: 0x0000000105e7cae4 CoreFoundation`__CFRunLoopRun + 2164
+    frame #50: 0x0000000105e7c016 CoreFoundation`CFRunLoopRunSpecific + 406
+    frame #51: 0x0000000107df8a24 GraphicsServices`GSEventRunModal + 62
+    frame #52: 0x00000001034df134 UIKit`UIApplicationMain + 159
+    frame #53: 0x0000000102a39107 StatusBarAnimationCrash`main at AppDelegate.swift:4
+    frame #54: 0x0000000106e8f65d libdyld.dylib`start + 1
+    frame #55: 0x0000000106e8f65d libdyld.dylib`start + 1
