@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C260FF882107FBA900F70FF7 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260FF872107FBA900F70FF7 /* Foo.swift */; };
+		C260FF8F2107FBBF00F70FF7 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260FF8E2107FBBF00F70FF7 /* Bar.swift */; };
+		C260FF972107FBD700F70FF7 /* BarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260FF962107FBD700F70FF7 /* BarTests.swift */; };
+		C260FF992107FBD700F70FF7 /* libWMOCoverage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C260FF842107FBA900F70FF7 /* libWMOCoverage.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C260FF9A2107FBD700F70FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C260FF7C2107FBA900F70FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C260FF832107FBA900F70FF7;
+			remoteInfo = WMOCoverage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C260FF842107FBA900F70FF7 /* libWMOCoverage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWMOCoverage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C260FF872107FBA900F70FF7 /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		C260FF8E2107FBBF00F70FF7 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		C260FF942107FBD700F70FF7 /* WMOCoverageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMOCoverageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C260FF962107FBD700F70FF7 /* BarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C260FF912107FBD700F70FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C260FF992107FBD700F70FF7 /* libWMOCoverage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C260FF7B2107FBA900F70FF7 = {
+			isa = PBXGroup;
+			children = (
+				C260FF862107FBA900F70FF7 /* WMOCoverage */,
+				C260FF952107FBD700F70FF7 /* WMOCoverageTests */,
+				C260FF852107FBA900F70FF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C260FF852107FBA900F70FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C260FF842107FBA900F70FF7 /* libWMOCoverage.a */,
+				C260FF942107FBD700F70FF7 /* WMOCoverageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C260FF862107FBA900F70FF7 /* WMOCoverage */ = {
+			isa = PBXGroup;
+			children = (
+				C260FF872107FBA900F70FF7 /* Foo.swift */,
+				C260FF8E2107FBBF00F70FF7 /* Bar.swift */,
+			);
+			path = WMOCoverage;
+			sourceTree = "<group>";
+		};
+		C260FF952107FBD700F70FF7 /* WMOCoverageTests */ = {
+			isa = PBXGroup;
+			children = (
+				C260FF962107FBD700F70FF7 /* BarTests.swift */,
+			);
+			path = WMOCoverageTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C260FF832107FBA900F70FF7 /* WMOCoverage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C260FF8B2107FBA900F70FF7 /* Build configuration list for PBXNativeTarget "WMOCoverage" */;
+			buildPhases = (
+				C260FF802107FBA900F70FF7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WMOCoverage;
+			productName = WMOCoverage;
+			productReference = C260FF842107FBA900F70FF7 /* libWMOCoverage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C260FF932107FBD700F70FF7 /* WMOCoverageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C260FF9C2107FBD700F70FF7 /* Build configuration list for PBXNativeTarget "WMOCoverageTests" */;
+			buildPhases = (
+				C260FF902107FBD700F70FF7 /* Sources */,
+				C260FF912107FBD700F70FF7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C260FF9B2107FBD700F70FF7 /* PBXTargetDependency */,
+			);
+			name = WMOCoverageTests;
+			productName = WMOCoverageTests;
+			productReference = C260FF942107FBD700F70FF7 /* WMOCoverageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C260FF7C2107FBA900F70FF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					C260FF832107FBA900F70FF7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					C260FF932107FBD700F70FF7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = C260FF7F2107FBA900F70FF7 /* Build configuration list for PBXProject "WMOCoverage" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C260FF7B2107FBA900F70FF7;
+			productRefGroup = C260FF852107FBA900F70FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C260FF832107FBA900F70FF7 /* WMOCoverage */,
+				C260FF932107FBD700F70FF7 /* WMOCoverageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C260FF802107FBA900F70FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C260FF8F2107FBBF00F70FF7 /* Bar.swift in Sources */,
+				C260FF882107FBA900F70FF7 /* Foo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C260FF902107FBD700F70FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C260FF972107FBD700F70FF7 /* BarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C260FF9B2107FBD700F70FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C260FF832107FBA900F70FF7 /* WMOCoverage */;
+			targetProxy = C260FF9A2107FBD700F70FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C260FF892107FBA900F70FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C260FF8C2107FBA900F70FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Debug;
+		};
+		C260FF9D2107FBD700F70FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C260FF7F2107FBA900F70FF7 /* Build configuration list for PBXProject "WMOCoverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C260FF892107FBA900F70FF7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C260FF8B2107FBA900F70FF7 /* Build configuration list for PBXNativeTarget "WMOCoverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C260FF8C2107FBA900F70FF7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C260FF9C2107FBD700F70FF7 /* Build configuration list for PBXNativeTarget "WMOCoverageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C260FF9D2107FBD700F70FF7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C260FF7C2107FBA900F70FF7 /* Project object */;
+}
