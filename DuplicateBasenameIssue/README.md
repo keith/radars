@@ -52,3 +52,7 @@ No warnings, and the dwarf should contain references to both source files foo/a.
 Actual Results:
 
 Some file references were missing.
+
+Environment:
+
+Xcode 13.0 beta 5 (and earlier)
