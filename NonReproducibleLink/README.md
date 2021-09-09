@@ -1,5 +1,8 @@
 ## <rdar://FB9593507>
 
+**NOTE**: You can workaround this specific repro case by passing
+`-no_objc_category_merging`
+
 Summary:
 
 With ld it's possible to get non-deterministic behavior where the
@@ -20,3 +23,7 @@ providing the same inputs every time.
 Actual Results:
 
 The binaries differ in a very reproducible way.
+
+Environment:
+
+Xcode 13.0 beta 5 and before
