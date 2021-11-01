@@ -10,7 +10,7 @@ clang -o bar/a.o bar/a.cc -c -g
 
 libtool -static -D "bar/a.o" "foo/a.o" -o libfoo.a
 
-ld -o lib -dynamic libfoo.a -dylib -arch arm64 -macos_version_min 11.0 -all_load -lSystem -syslibroot "$(xcrun --show-sdk-path)"
+ld -o lib -dynamic libfoo.a -dylib -arch "$(uname -m)" -macos_version_min 11.0 -all_load -lSystem -syslibroot "$(xcrun --show-sdk-path)"
 
 output=$(mktemp)
 dsymutil lib --flat >"$output" 2>&1
